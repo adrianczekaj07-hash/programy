@@ -1,21 +1,32 @@
-
-
 einkaufs_liste = ["Milch", "Brot", "Eier", "Käse", "Äpfel", "Bananen", "Orangen", "Butter", "Joghurt"]
-print("Deine Einkaufsliste: ")
-a = 0
-for x in einkaufs_liste:  
-    a += 1      
-    print("Produkt Nr:", a, "\t", x)  
-  
+wagen = []  
 
-def produkt_in_liste(c):
-    if c in einkaufs_liste:
-        print("Produkt", c, "wird in den Einkaufswagen gelegt.")  
-        return d = {}
-          
+arg = str(input("Geben Sie den Namen eines Artikels ein, den Sie kaufen möchten: "))
+
+a = len(einkaufs_liste) - 1
+while a > 0:
+    if arg in einkaufs_liste:
+        wagen.append(arg)
+        einkaufs_liste.remove(arg)
+        print("Artikel", arg, "wurde zum Wagen hinzugefügt.")
+        print("Aktuelle Einkaufsliste:", einkaufs_liste)
+        print("Aktueller Wagen:", wagen)
+        arg = str(input("Nechsten Artikel eingeben: "))
+        a -= 1
     else:
-        print(c, "ist nicht auf der Einkaufsliste.")
-        return False
+        print("Artikel", arg, "ist nicht in der Einkaufsliste.")
+        arg = str(input("Nechsten Artikel eingeben: "))
 
-produkt = input("Geben Sie ein Produkt ein, das Sie ins Einkaufswagen legen: ")
-produkt_in_liste(produkt)
+print("Einkaufsliste ist leer. Alle Artikel wurden gekauft.")
+
+
+
+
+    
+    
+
+
+
+
+
+        
