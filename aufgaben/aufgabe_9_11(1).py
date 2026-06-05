@@ -30,7 +30,7 @@ match befehl:
         for item in lex_01:
             print(f"{item:16} : {lex_01[item]["it"]}")
 
-    case _:                                                      # _ jako "kazdy"
+    case _:                                                     
         print("Falscher Befehl")
 
 
