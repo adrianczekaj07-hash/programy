@@ -1,0 +1,17 @@
+from Tier import *
+class ProgrammKlasse:
+    def main():
+        print("Anzal der Tiere: ", Tier.AnzahlTiere())
+        susi = Tier()
+        print("Anzal der Tiere: ", Tier.AnzahlTiere())
+        strolch = Tier()
+        print("Anzal der Tiere: ", Tier.AnzahlTiere())
+        herb = Tier()
+        print("Anzal der Tiere am Ende (Abfrage für die Klasse): ", Tier.AnzahlTiere())
+        print("Anzal der Tiere am Ende (Abfrage für eine Instanz): ", susi.AnzahlTiere())
+
+
+    def __init__(self):
+        ProgrammKlasse.main()
+
+ProgrammKlasse()
