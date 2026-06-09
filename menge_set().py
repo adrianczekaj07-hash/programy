@@ -33,5 +33,5 @@ z = {"c", "d"}
 print(x.difference(y))                 # wyswietla roznice zbiorow x \ y
 print(x.difference(y).difference(z))   # wyswietla roznice roznicy (x \ y) \ z
 
-
+print(x.difference_update(y))
 
