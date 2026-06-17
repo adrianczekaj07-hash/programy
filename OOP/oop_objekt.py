@@ -58,5 +58,9 @@ objekt = Mensch()
 print(objekt.alter, objekt.name)
 
 
+import sys                                 # po zaimportowaniu modulu (tu sys) mozemy wylistowac wszystkie jego komendy
+print(sys.builtin_module_names)
+for dir in sys.path:                       # funkcja wskazuje sciezki gdzie bedzie szukany importowany modul
+    print(dir)
 
 

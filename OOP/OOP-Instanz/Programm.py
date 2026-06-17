@@ -1,4 +1,4 @@
-from Kunde import *     
+from Kunde import *     # alternatywnie mozemy uzyc (import Kunde as K) wowczas wystarczy samo K przy odwolywaniu sie do biblioteki (Kunde)
 from Konto import *
 
 kunde_1 = Kunde("Hans", "Dampf", 42, "Mann", "Milchstrasse 123, 777 Irgendwodorf", Konto(1000, "Girokonto"))

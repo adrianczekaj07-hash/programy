@@ -11,3 +11,5 @@ class ProgrammStatisch:
         ProgrammStatisch.main()
 
 ProgrammStatisch()
+
+help(Rechne.addiere)  # wyswietla komentarz umieszczony przy funkcji addiere

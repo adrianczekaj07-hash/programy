@@ -1,6 +1,7 @@
 class Rechne:
     @staticmethod
     def addiere(a, b):
+        '''Das ist nur Beispiele Hilfe Erklärung'''
         return a + b
     
     @staticmethod
