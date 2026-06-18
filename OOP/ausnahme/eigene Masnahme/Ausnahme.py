@@ -8,7 +8,7 @@ class Ausnahme:
             try:
 
                 geheimzahl = int(input("Butte Geheimzahl eingeben:\n"))
-                if (geheimzahl % 7 != 0):
+                if (geheimzahl != 0000):
                     self.i += 1
 
                 else:
