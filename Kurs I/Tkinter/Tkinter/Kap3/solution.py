@@ -42,8 +42,7 @@ for (text, zeile, spalte) in tasten:
                                          columnspan=4,sticky="nsew")
     else:
         tk.Button(fenster, text=text, width=5, height=2, font=('Arial', 14),
-                  command=lambda t=text: taste_druecken(t)).
-        grid(row=zeile, column=spalte, sticky="nsew")
+                  command=lambda t=text: taste_druecken(t)).grid(row=zeile, column=spalte, sticky="nsew")
 
 # Löschen-Taste
 tk.Button(fenster, text='C', width=5, height=2, font=('Arial', 14),

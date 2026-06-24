@@ -1,7 +1,7 @@
 from tkinter import *
 
 def aktion1(event):
-    print(listbox.get(ACTIVE))
+    print(listbox.get(ACTIVE))           # zwraca info 
     print(listbox.curselection()[0])
    
 master = Tk()

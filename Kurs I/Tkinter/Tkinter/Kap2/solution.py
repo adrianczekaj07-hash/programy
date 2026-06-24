@@ -5,8 +5,8 @@ fenster = tk.Tk()
 fenster.title("Navigation mit Bild und Text")
 
 # Bilder laden (nur PNG, GIF, PPM/PGM mit Tkinter)
-pfeil_links = tk.PhotoImage(file="img/links.png")
-pfeil_rechts = tk.PhotoImage(file="img/rechts.png")
+pfeil_links = tk.PhotoImage(file="C:\Users\AdrianCzekaj\OneDrive - future - Training & Consulting GmbH\Desktop\programy\Tkinter\Tkinter\Kap2\img\links.png")
+pfeil_rechts = tk.PhotoImage(file="C:\Users\AdrianCzekaj\OneDrive - future - Training & Consulting GmbH\Desktop\programy\Tkinter\Tkinter\Kap2\img\echts.png")
 
 
 # 2 Buttons mit Bild und Text
