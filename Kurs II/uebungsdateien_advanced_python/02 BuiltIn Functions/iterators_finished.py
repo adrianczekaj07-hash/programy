@@ -1,6 +1,7 @@
 # use iterator functions like enumerate, zip, iter, next
 
 
+
 def main():
     # define a list of days in English and German
     days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
@@ -13,9 +14,10 @@ def main():
     print(next(i))  # Tue
 
     # iterate using a function and a sentinel
-    with open("testfile.txt", "r") as fp:
-        for line in iter(fp.readline, ''):
+    with open(r"Kurs II\uebungsdateien_advanced_python\02 BuiltIn Functions\testfile.txt", "r") as fp:
+        for line in iter(fp.readline, ""):
             print(line)
+
 
     # use regular interation over the days
     for m in range(len(days)):
