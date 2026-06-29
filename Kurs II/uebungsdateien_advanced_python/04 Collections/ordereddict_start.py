@@ -14,6 +14,8 @@ def main():
     sortedTeams = sorted(sportTeams, key=lambda t: t[1][0], reverse=True)
 
     # TODO: create an ordered dictionary of the teams
+    teams = OrderedDict(sortedTeams)
+    print(teams)
 
     # TODO: Use popitem to remove the top item
 

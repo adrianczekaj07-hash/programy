@@ -30,7 +30,10 @@ class Employee():
         return self.level <= other.level
 
     def __eq__(self, other):
+        if self.level == other.level:
+            return self.seniority == other.seniority
         return self.level == other.level
+
 
 
 def main():
@@ -42,14 +45,20 @@ def main():
     dept.append(Employee("Rebecca", "Robinson", 5, 13))
     dept.append(Employee("Tyler", "Durden", 5, 12))
 
+
     # Who's more senior?
     print(bool(dept[0] > dept[2]))
     print(bool(dept[4] < dept[3]))
+    print(bool(dept[1] == dept[4]))
 
     # sort the items
-    emps = sorted(dept)
+    emps = sorted(dept)         # system sprawdza za pomoca wyzwj zdefiniowanego 
+                                # operatora (__lt__()) ( < ) wsystkich prasownikow i szereguje 
+                                # ich od najmniejszego do najwiekszego w liscie (emps)
+    
+
     for emp in emps:
-        print(emp.lname)
+        print(f"{emp} : {emp.fname}, {emp.lname}, {emp.level}, {emp.seniority}")
 
 
 if __name__ == "__main__":
